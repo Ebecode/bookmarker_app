@@ -1,0 +1,20 @@
+{
+  "name": "bookmarker_app",
+  "version": "1.0.0",
+  "description": "My first take on a vanilla js local storage bookmarker app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ebecode/bookmarker_app.git"
+  },
+  "author": "Ebecode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ebecode/bookmarker_app/issues"
+  },
+  "homepage": "https://github.com/Ebecode/bookmarker_app#readme"
+}

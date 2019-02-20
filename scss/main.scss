@@ -1,0 +1,37 @@
+//imports
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono");
+
+//variables
+$light-text: #444;
+
+//mixins
+@mixin fixed {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $light-text;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+
+  header {
+    @include fixed;
+    top: 0;
+  }
+  footer {
+    @include fixed;
+    bottom: 0;
+  }
+}
