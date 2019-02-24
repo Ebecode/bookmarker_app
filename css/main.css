@@ -52,7 +52,7 @@ main {
       font-size: 1.2rem;
       text-align: center;
       margin: 0.5rem; }
-    .search-form .input-field input {
+    .search-form .input-field .input-bar {
       display: block;
       width: 100%;
       font-family: "Roboto Mono", monospace;
@@ -60,3 +60,49 @@ main {
       padding: 0 1rem;
       color: #495057;
       outline-color: #28a745; }
+
+button.btn {
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  border-radius: 3px; }
+
+button.btn-lg {
+  padding: 10px 20px;
+  font-size: 1.5rem; }
+
+button.btn-sm {
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 1rem; }
+
+button.green {
+  background: #28a745; }
+  button.green:hover {
+    transition: 0.4s ease-out;
+    background-color: #fff;
+    color: #28a745;
+    border: 1px solid #28a745; }
+
+button.red {
+  background: #dc3545; }
+  button.red:hover {
+    transition: 0.4s ease-out;
+    background-color: #fff;
+    color: #dc3545;
+    border: 1px solid #dc3545; }
+
+.bookmark {
+  background: #eee;
+  width: 95%;
+  margin: 10px auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px; }
+  .bookmark h2 {
+    flex: 1 0 auto; }
+  .bookmark .btn-box {
+    flex: 0 1 auto; }

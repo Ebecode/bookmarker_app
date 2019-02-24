@@ -6,6 +6,7 @@ $gray-900: #212529;
 $gray-700: #495057;
 $gray-400: #ced4da;
 $gray-300: #dee2e6;
+$gray-100: #eee;
 $green: #28a745;
 $red: #dc3545;
 
@@ -17,6 +18,9 @@ $red: #dc3545;
   justify-content: flex-start;
   align-items: center;
   padding: 0 30px;
+}
+@mixin easeOut {
+  transition: 0.4s ease-out;
 }
 
 * {
@@ -72,7 +76,7 @@ main {
       margin: 0.5rem;
     }
 
-    input {
+    .input-bar {
       display: block;
       width: 100%;
       font-family: "Roboto Mono", monospace;
@@ -81,5 +85,57 @@ main {
       color: $gray-700;
       outline-color: $green;
     }
+  }
+}
+
+button.btn {
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  border-radius: 3px;
+}
+button.btn-lg {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+button.btn-sm {
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 1rem;
+}
+button.green {
+  background: $green;
+  &:hover {
+    @include easeOut;
+    background-color: #fff;
+    color: $green;
+    border: 1px solid $green;
+  }
+}
+button.red {
+  background: $red;
+  &:hover {
+    @include easeOut;
+    background-color: #fff;
+    color: $red;
+    border: 1px solid $red;
+  }
+}
+
+.bookmark {
+  background: $gray-100;
+  width: 95%;
+  margin: 10px auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  h2 {
+    flex: 1 0 auto;
+  }
+  .btn-box {
+    flex: 0 1 auto;
   }
 }
